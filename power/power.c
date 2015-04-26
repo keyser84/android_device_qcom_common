@@ -267,8 +267,8 @@ static void power_hint(struct power_module *module, power_hint_t hint,
     switch(hint) {
         case POWER_HINT_VSYNC:
         case POWER_HINT_INTERACTION:
-        case POWER_HINT_CPU_BOOST:
-        case POWER_HINT_SET_PROFILE:
+        //case POWER_HINT_CPU_BOOST:
+        //case POWER_HINT_SET_PROFILE:
         break;
         case POWER_HINT_VIDEO_ENCODE:
             process_video_encode_hint(data);
@@ -276,9 +276,9 @@ static void power_hint(struct power_module *module, power_hint_t hint,
         case POWER_HINT_VIDEO_DECODE:
             process_video_decode_hint(data);
         break;
-        case POWER_HINT_AUDIO:
-            process_audio_hint(data);
-        break;
+        //case POWER_HINT_AUDIO:
+        //    process_audio_hint(data);
+        //break;
     }
 
 out:
